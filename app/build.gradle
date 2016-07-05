@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.2'
+
+    defaultConfig {
+        applicationId "com.ly.supermvp"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    /*Google library*/
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.android.support:support-v13:23.1.1'
+    /*squareup library*/
+    compile 'com.squareup.retrofit:retrofit:2.0.0-beta4'
+    compile 'com.squareup.retrofit:converter-gson:2.0.0-beta2'
+    compile 'com.squareup.retrofit:adapter-rxjava:2.0.0-beta2'
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.3.1'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.3.1'
+    /*rx library*/
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'io.reactivex:rxjava:1.1.0'
+    compile 'com.jakewharton.rxbinding:rxbinding:0.3.0'
+    compile 'com.jakewharton.rxbinding:rxbinding-support-v4:0.3.0'
+    compile 'com.jakewharton.rxbinding:rxbinding-appcompat-v7:0.3.0'
+    compile 'com.jakewharton.rxbinding:rxbinding-recyclerview-v7:0.3.0'
+    compile 'com.jakewharton.rxbinding:rxbinding-design:0.3.0'
+    /*other library*/
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.github.orhanobut:logger:1.12'
+    compile 'com.github.rey5137:material:1.2.2'
+    compile 'com.orhanobut:dialogplus:1.11@aar'
+    compile 'me.imid.swipebacklayout.lib:library:1.0.0'
+    compile 'com.bm.photoview:library:1.3.6'
+    compile 'com.github.clans:fab:1.6.2'
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.ly.supermvp.widget.ProgressLayout
+        android:id="@+id/progress_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.rey.material.widget.EditText
+            android:id="@+id/et_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/material_16dp"
+            android:hint="@string/weather_edit_hint"
+            android:textSize="@dimen/material_20sp"
+            app:et_labelEllipsize="marquee"
+            app:et_labelEnable="true"
+            app:et_labelInAnim="@anim/alpha_in"
+            app:et_labelTextSize="@dimen/material_16sp"
+            app:et_supportMode="charCounter"></com.rey.material.widget.EditText>
+
+        <com.rey.material.widget.Button
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/et_location"
+            android:id="@+id/bt_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/material_16dp"
+            android:paddingRight="@dimen/material_16dp"
+            android:text="@string/weather_btn"
+            app:rd_backgroundColor="@color/colorAccent"
+            app:rd_enable="true" />
+    </com.ly.supermvp.widget.ProgressLayout>
+</LinearLayout>

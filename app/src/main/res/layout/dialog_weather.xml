@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/material_16dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_weather"
+            android:layout_width="@dimen/material_128dp"
+            android:layout_height="@dimen/material_128dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/material_24dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/material_20sp"
+                tools:text="晴" />
+
+            <TextView
+                android:layout_marginTop="@dimen/material_8dp"
+                android:id="@+id/tv_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/material_20sp"
+                tools:text="10℃" />
+            <TextView
+                android:id="@+id/tv_temperature_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/material_8dp"
+                android:textSize="@dimen/material_20sp"
+                tools:text="13:30" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_aqi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/material_8dp"
+        android:drawableLeft="@mipmap/ic_api"
+        android:drawablePadding="@dimen/material_16dp"
+        android:gravity="center_vertical"
+        tools:text="@string/weather_dialog_aqi"
+        android:textSize="@dimen/material_20sp" />
+
+    <TextView
+        android:id="@+id/tv_sd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/material_8dp"
+        android:drawableLeft="@mipmap/ic_sd"
+        android:drawablePadding="@dimen/material_16dp"
+        android:gravity="center_vertical"
+        tools:text="@string/weather_dialog_sd"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_wind_direction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/material_8dp"
+        android:drawableLeft="@mipmap/ic_wind_direction"
+        android:drawablePadding="@dimen/material_16dp"
+        android:gravity="center_vertical"
+        tools:text="@string/weather_dialog_wind_direction"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_wind_power"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/material_8dp"
+        android:drawableLeft="@mipmap/ic_wind_power"
+        android:drawablePadding="@dimen/material_16dp"
+        android:gravity="center_vertical"
+        tools:text="@string/weather_dialog_wind_power"
+        android:textSize="20sp" />
+</LinearLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">SuperMvp</string>
+    <string name="action_settings">关于</string>
+    <string name="load_error">加载出错</string>
+    <string name="transition_news_img">transition_news_img</string>
+    <string name="loading">正在加载...</string>
+    <string name="btn_try_again">重试</string>
+
+    <!--主页-->
+    <string name="main_tab_news">最新新闻</string>
+    <string name="main_tab_picture">美图大全</string>
+    <string name="main_tab_weather">天气预报</string>
+
+    <!--天气预报-->
+    <string name="weather_dialog_aqi">污染指数:%1$s</string>
+    <string name="weather_dialog_sd">湿度:%1$s</string>
+    <string name="weather_dialog_wind_direction">风向:%1$s</string>
+    <string name="weather_dialog_wind_power">风力强度:%1$s</string>
+    <string name="weather_edit_hint">请输入城市名(如：北京)</string>
+    <string name="weather_btn">查询当前天气</string>
+</resources>
